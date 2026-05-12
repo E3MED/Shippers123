@@ -1,9 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Shippers123</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shippers123</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #003366, #0055aa);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .box {
+            background: rgba(0,0,0,0.3);
+            padding: 40px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>🚀 Site is working</h1>
+
+    <div class="box">
+        <h1>🚀 Shippers123 Live Test</h1>
+        <p>If you can see this, GitHub Pages is working.</p>
+
+        <button onclick="changeText()">Click Me</button>
+
+        <p id="text"></p>
+    </div>
+
+    <script>
+        function changeText() {
+            document.getElementById("text").innerText =
+                "JavaScript is working on GitHub Pages 🎉";
+        }
+    </script>
+
 </body>
 </html>
